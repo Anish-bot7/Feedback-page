@@ -1,0 +1,41 @@
+.user-dashboard {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to right, #16222a, #3a6073);
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-header {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-glass:hover {
+  transform: translateY(-5px);
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
