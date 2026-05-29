@@ -10,7 +10,7 @@ const AdminLogin = () => {
   const loginAdmin = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('${import.meta.env.VITE_API_URL}/admin/login', form);
+      await axios.post(`${import.meta.env.VITE_API_URL}/admin/login`, form);
       localStorage.setItem('admin', form.username);
       navigate('/admin/dashboard');
     } catch (err) {
