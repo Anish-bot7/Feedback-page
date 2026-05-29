@@ -13,7 +13,7 @@ const AdminDashboard = () => {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await axios.get('${import.meta.env.VITE_API_URL}/admin/feedbacks');
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/admin/feedbacks`);
       setFeedbacks(res.data);
     } catch (err) {
       console.error('Error fetching feedbacks:', err);

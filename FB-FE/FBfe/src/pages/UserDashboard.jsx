@@ -24,7 +24,7 @@ const UserDashboard = () => {
     e.preventDefault();
     if (!form.email || !form.message) return alert('Fill in all fields');
     try {
-      await axios.post('${import.meta.env.VITE_API_URL}/feedback', {
+      await axios.post(`${import.meta.env.VITE_API_URL}/feedback`, {
         username,
         email: form.email,
         message: form.message
