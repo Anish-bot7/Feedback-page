@@ -13,7 +13,7 @@ const AdminDashboard = () => {
 
   const fetchFeedbacks = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/admin/feedbacks');
+      const res = await axios.get('${import.meta.env.VITE_API_URL}/admin/feedbacks');
       setFeedbacks(res.data);
     } catch (err) {
       console.error('Error fetching feedbacks:', err);
@@ -24,7 +24,7 @@ const AdminDashboard = () => {
     const reply = replyText[id];
     if (!reply) return alert('Enter a reply');
     try {
-      await axios.put(`http://localhost:8000/admin/feedback/${id}/reply`, { reply });
+      await axios.put(`${import.meta.env.VITE_API_URL}/admin/feedback/${id}/reply`, { reply });
       fetchFeedbacks();
       setReplyText(prev => ({ ...prev, [id]: '' }));
       alert('Reply sent!');

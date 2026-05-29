@@ -10,7 +10,7 @@ const UserDashboard = () => {
 
   useEffect(() => {
     if (username) {
-      axios.get(`http://localhost:8000/user/${username}/feedbacks`)
+      axios.get(`${import.meta.env.VITE_API_URL}/user/${username}/feedbacks`)
         .then(res => setFeedbacks(res.data))
         .catch(() => setStatus('Error fetching feedbacks.'));
     }
@@ -24,7 +24,7 @@ const UserDashboard = () => {
     e.preventDefault();
     if (!form.email || !form.message) return alert('Fill in all fields');
     try {
-      await axios.post('http://localhost:8000/feedback', {
+      await axios.post('${import.meta.env.VITE_API_URL}/feedback', {
         username,
         email: form.email,
         message: form.message
@@ -32,7 +32,7 @@ const UserDashboard = () => {
       setStatus('✅ Feedback submitted successfully!');
       setForm({ email: '', message: '' });
 
-      const res = await axios.get(`http://localhost:8000/user/${username}/feedbacks`);
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/user/${username}/feedbacks`);
       setFeedbacks(res.data);
     } catch (err) {
       setStatus('❌ Error submitting feedback');

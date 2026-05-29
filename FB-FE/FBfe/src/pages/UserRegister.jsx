@@ -10,7 +10,7 @@ const UserRegister = () => {
   const registerUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/user/register', form);
+      await axios.post('${import.meta.env.VITE_API_URL}/user/register', form);
       alert('Registered successfully!');
       navigate('/user/login');
     } catch (err) {

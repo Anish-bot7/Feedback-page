@@ -10,7 +10,7 @@ const UserLogin = () => {
   const loginUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/user/login', form);
+      await axios.post('${import.meta.env.VITE_API_URL}/user/login', form);
       localStorage.setItem('user', form.username);
       navigate('/user/dashboard');
     } catch (err) {
