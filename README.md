@@ -74,9 +74,9 @@ Backend
 
 Add screenshots of:
 - Home Page<img width="1915" height="1022" alt="Image" src="https://github.com/user-attachments/assets/20b7c895-f281-4257-be7f-870e3aa1c205" />
-- User Login
-- User Dashboard
-- Admin Dashboard
+- User Login<img width="1919" height="867" alt="Image" src="https://github.com/user-attachments/assets/164fd46b-d0e3-4038-a64e-f7385d97c000" />
+- User Dashboard<img width="1913" height="1025" alt="Image" src="https://github.com/user-attachments/assets/ba7c776b-8d90-4594-a2e3-68257d087b5f" />
+- Admin Dashboard<img width="1918" height="628" alt="Image" src="https://github.com/user-attachments/assets/b523a9be-7869-40ae-801f-8b4921dafeb1" />
 
 ## 🎯 Future Improvements
 
