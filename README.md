@@ -73,7 +73,7 @@ Backend
 ## 📸 Screenshots
 
 Add screenshots of:
-- Home Page
+- Home Page<img width="1915" height="1022" alt="Image" src="https://github.com/user-attachments/assets/20b7c895-f281-4257-be7f-870e3aa1c205" />
 - User Login
 - User Dashboard
 - Admin Dashboard
